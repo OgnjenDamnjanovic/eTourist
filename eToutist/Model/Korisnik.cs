@@ -9,9 +9,9 @@ namespace eTourist.Model
 {
     public class Korisnik
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
+        /*[BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]*/
+        public ObjectId Id { get; set; }
         public string email{ get; set; }
         public string sifra{ get; set; }
         public string ime{ get; set; }
@@ -20,6 +20,7 @@ namespace eTourist.Model
         public string grad{ get; set; }
         public string adresa{ get; set; }
         public int tip{ get; set; }
+        public MongoDBRef Hotel {get; set;}
     }
 }
 

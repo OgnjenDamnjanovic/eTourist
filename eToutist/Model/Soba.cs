@@ -8,11 +8,12 @@ namespace eTourist.Model
 {
     public class Soba
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
-       public List<MongoDBRef> Rezervacije { get; set; }
-       public int brojMesta { get; set; }
-        
+        /*[BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]*/
+        public ObjectId Id { get; set; }
+        public string oznaka {get; set;}
+        public List<MongoDBRef> Rezervacije { get; set; } = new List<MongoDBRef>();
+        public int brojMesta { get; set; }
+        public MongoDBRef hotel {get;set;}
     }
 }

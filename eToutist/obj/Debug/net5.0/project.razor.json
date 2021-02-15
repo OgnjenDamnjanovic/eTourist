@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\NBP.csproj",
+  "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\NBP.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15603,98 +15603,98 @@
   "RootNamespace": "NBP",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\Register.cshtml",
-      "TargetPath": "Pages\\Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\Profile.cshtml",
-      "TargetPath": "Pages\\Profile.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\Hotels.cshtml",
-      "TargetPath": "Pages\\Hotels.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\Destinations.cshtml",
-      "TargetPath": "Pages\\Destinations.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\Admin.cshtml",
-      "TargetPath": "Pages\\Admin.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\AboutUs.cshtml",
-      "TargetPath": "Pages\\AboutUs.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\AddAranzman.cshtml",
-      "TargetPath": "Pages\\AddAranzman.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\AddHotel.cshtml",
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\AddHotel.cshtml",
       "TargetPath": "Pages\\AddHotel.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\Hotel-Single.cshtml",
-      "TargetPath": "Pages\\Hotel-Single.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\BookingForm.cshtml",
-      "TargetPath": "Pages\\BookingForm.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\Login.cshtml",
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\Login.cshtml",
       "TargetPath": "Pages\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\AddAranzman.cshtml",
+      "TargetPath": "Pages\\AddAranzman.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\Hotels.cshtml",
+      "TargetPath": "Pages\\Hotels.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\Pages\\Contact.cshtml",
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\Admin.cshtml",
+      "TargetPath": "Pages\\Admin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\Hotel-Single.cshtml",
+      "TargetPath": "Pages\\Hotel-Single.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\Contact.cshtml",
       "TargetPath": "Pages\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\Register.cshtml",
+      "TargetPath": "Pages\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\Profile.cshtml",
+      "TargetPath": "Pages\\Profile.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\BookingForm.cshtml",
+      "TargetPath": "Pages\\BookingForm.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\AboutUs.cshtml",
+      "TargetPath": "Pages\\AboutUs.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\Destinations.cshtml",
+      "TargetPath": "Pages\\Destinations.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

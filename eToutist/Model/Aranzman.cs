@@ -9,15 +9,12 @@ namespace eTourist.Model
 {
     public class Aranzman
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
-        
+        /*[BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]*/
+        public ObjectId Id { get; set; }
         public DateTime pocetak { get; set; }
         public DateTime kraj { get; set; }
         public int cena { get; set; }
-        
-
-
+        public MongoDBRef hotel {get;set;}
     }
 }

@@ -7,31 +7,23 @@
 		<div class="container">
 		<!---728x90--->
 
-				<div class="logo text-left top-bottom-gap">
-					<a class="brand-logo" href="index-2.html">Haven</a>
-					<!-- if logo is image enable this   
-							<a class="brand-logo" href="#index.html">
-								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-							</a> -->
-				</div>
+				
 			<div class="login-form">
 				<h4 class="form-head">Welcome, Please Login</h4>
-				<form action="#" method="GET">
+				<form method="post">
 					<div class="">
-						<p class="text-head">User Id</p>
-						<input type="text" name="username" placeholder="Please Enter User Id.." class="input" />
+						<p class="text-head">Email</p>
+						<input type="text" required="" asp-for="email" placeholder="Please Enter Email.." class="input" />
 					</div>
 					<div class="">
 						<p class="text-head">Password</p>
-						<input type="password" name="password" placeholder="Please Enter Password.." class="input" />
+						<input type="password" required="" asp-for="sifra" placeholder="Please Enter Password.." class="input" />
+						
 					</div>
-					<label class="remember">
-						<input type="checkbox">
-						<span class="checkmark"></span>Remember me
-					</label>
+					<span class="error">@Model.ErrorMessage</span>
 					<div class="d-grid align-login-register">
-						<button type="submit" class="btn btn-theme4">Login</button>
-						<a href="signup.html" class="signuplink">Register New</a>
+						<button type="submit" class="btn btn-theme4" asp-page-handler="Login">Login</button>
+						<a asp-page="/Register" class="signuplink">Register New</a>
 					</div>
 				</form>
 

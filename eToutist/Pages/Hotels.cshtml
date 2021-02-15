@@ -2,153 +2,60 @@
 @model MyApp.Namespace.HotelsModel
 @{
 }
+
+<head>
+	<title>eTourist | Hotels</title>
+</head>
 <section class="w3l-inner-banner-main">
     <div class="about-inner portfolo-1">
         <div class="container">
-            
             <ul class="breadcrumbs-custom-path">
-               
-                <li><a href="index-2.html"><span class="fa fa-home" aria-hidden="true"></span> <span class="fa fa-angle-double-right" aria-hidden="true"></span></a></li>
-                <li class="active">Accommodation</li>
+                <li><a asp-page="/Index"><span class="fa fa-home" aria-hidden="true"></span> <span class="fa fa-angle-double-right" aria-hidden="true"></span></a></li>
+                <li class="active">Hotels / </li>
+				@if(Model.hoteli.Count>0){
+				<li class="active">@Model.hoteli.ElementAt(0).Drzava / </li>
+				<li class="active">@Model.hoteli.ElementAt(0).Grad</li>}
             </ul>
         </div>
     </div>
 </section>
-<!-- //covers -->
-<!---728x90--->
-
-<!-- blog -->
 <section class="w3l-blog-main-61">
-		<!-- /grids -->
-		<div class="grids-layout py-5">
-			<div class="container py-md-3">
-				<div class="gallery-25-content">
-					<div class="d-grid grid-columns">
-						<div class="blg-tp">
+	<div class="grids-layout py-5">
+		<div class="container py-md-3">
+			<div class="gallery-25-content">
+				<div class="d-grid grid-columns">
+				@foreach(var h in @Model.hoteli)
+				{
+					<div class="blg-tp" style="max-height:310px;">
+
 						<div class="column one-blog">
 							<div class="box13">
-								<a href="accommodation-single.html"><img class="side-img" src="assets/images/g10.jpg" alt="" /></a>
+								<a asp-page="/Hotel-Single" asp-route-id="@h.Id"><img class="side-img" src="@h.GlavnaSlika" style="max-height:310px;" alt="" /></a>
 							</div>
 						</div>
+
 						<div class="column two two-blog">
 							<div class="box13">
-									
-								<h3><a href="accommodation-single.html">Deluxe Room</a></h3>
-								
-								<ul class="admin-list">
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Plasma TV with Cable</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> King Size Bed</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> 9Breakfast Included</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Shower and Tub</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Air conditioning</li>
+								<div style="display:flex; flex-direction:column;">
+									<h3><a asp-page="/Hotel-Single" asp-route-id="@h.Id">@h.Naziv</a></h3>
+									<div>
+										@for(int i = 0;i<@h.brojZvezdica;i++){
+											<span class="fa fa-star checked" style="color:orange;"></span>
+										}
+									</div>
+								</div>
+								<ul class="admin-list" style="display:flex; flex-direction:column;">
+									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> WiFi</li>
+									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Phone: @h.brojTelefona</li>
 								</ul>
-								<h4 class="mt-2">$50.00 <span class="per">per night</span></h4>
-										<div class="button"><a href="accommodation-single.html" class="btn btn-theme4 mt-3">Room Detail </a></div>
-								</div>
-						</div>
-					</div>
-					<div class="blg-tp">
-						<div class="column col2 four-blog">
-								<div class="box13">
-									<a href="accommodation-single.html"><img class="side-img" src="assets/images/g9.jpg" alt="" /></a>
-								</div>
+								<div class="button" style="margin-top:40px;"><a asp-page="/Hotel-Single" asp-route-id="@h.Id" class="btn btn-theme4 mt-3">Details </a></div>
 							</div>
-						<div class="column two col1 three-blog">
-							<div class="box13">
-									
-								<h3><a href="accommodation-single.html">
-									Master Room</a></h3>
-								
-									<ul class="admin-list">
-										<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Plasma TV with Cable</li>
-										<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> King Size Bed</li>
-										<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> 9Breakfast Included</li>
-										<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Shower and Tub</li>
-										<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Air conditioning</li>
-									</ul>
-									<h4 class="mt-2">$50.00 <span class="per">per night</span></h4>
-										<div class="button"><a href="accommodation-single.html" class="btn btn-theme4 mt-3">Room Detail </a></div>
-								</div>
 						</div>
-					</div>	
 
-					<div class="blg-tp">
-						<div class="column five-blog">
-							<div class="box13">
-								<a href="accommodation-single.html"><img class="side-img" src="assets/images/g8.jpg" alt="" /></a>
-							</div>
-						</div>
-						<div class="column two six-blog">
-							<div class="box13">
-									
-								<h3><a href="accommodation-single.html">Super Room</a></h3>
-								
-								<ul class="admin-list">
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Plasma TV with Cable</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> King Size Bed</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> 9Breakfast Included</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Shower and Tub</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Air conditioning</li>
-								</ul>
-								<h4 class="mt-2">$50.00 <span class="per">per night</span></h4>
-										<div class="button"><a href="accommodation-single.html" class="btn btn-theme4 mt-3">Room Detail </a></div>
-								</div>
-						</div>
 					</div>
-					<div class="blg-tp">
-						<div class="column col2 eight-blog">
-								<div class="box13">
-									<a href="#gallery-25"><img class="side-img" src="assets/images/g7.jpg" alt="" /></a>
-								</div>
-							</div>
-						<div class="column two col1 seven-blog">
-							<div class="box13">
-								
-								<h3><a href="accommodation-single.html">Normal Room</a></h3>
-								
-								<ul class="admin-list">
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Plasma TV with Cable</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> King Size Bed</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> 9Breakfast Included</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Shower and Tub</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Air conditioning</li>
-								</ul>
-								<h4 class="mt-2">$50.00 <span class="per">per night</span></h4>
-										<div class="button"><a href="accommodation-single.html" class="btn btn-theme4 mt-3">Room Detail </a></div>
-								</div>
-						</div>
-					</div>	
-					<div class="blg-tp">
-						<div class="column nine-blog">
-							<div class="box13">
-								<a href="accommodation-single.html"><img class="side-img" src="assets/images/g6.jpg" alt="" /></a>
-							</div>
-						</div>
-						<div class="column two ten-blog">
-							<div class="box13">
-								
-								<h3>Deluxe Room</h3>
-								
-								<ul class="admin-list">
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Plasma TV with Cable</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> King Size Bed</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> 9Breakfast Included</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Shower and Tub</li>
-									<li><span class="fa fa-long-arrow-right" aria-hidden="true"></span> Air conditioning</li>
-								</ul>
-								<h4 class="mt-2">$50.00 <span class="per">per night</span></h4>
-										<div class="button"><a href="accommodation-single.html" class="btn btn-theme4 mt-3">Room Detail </a></div>
-								</div>
-						</div>
-					</div>
-	
+					}
 				</div>
-					
-				</div>
-	
 			</div>
 		</div>
-		</div>
-		<!-- //grids -->
-	</section>
-<!-- //form -->
+	</div>
+</section>

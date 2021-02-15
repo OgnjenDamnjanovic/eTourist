@@ -24,13 +24,14 @@ namespace NBP
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
+        {      
              services.Configure<DatabaseSettings>(
             Configuration.GetSection(nameof(DatabaseSettings)));
 
             services.AddSingleton<IDatabaseSettings>(sp =>
             sp.GetRequiredService<IOptions<DatabaseSettings>>().Value);
-            services.AddRazorPages();
+             services.AddAntiforgery(o => o.HeaderName = "XSRF-TOKEN");
+            services.AddRazorPages();services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,7 +47,7 @@ namespace NBP
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

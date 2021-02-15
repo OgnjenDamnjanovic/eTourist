@@ -17,30 +17,46 @@
       </div>
       <div class="login-form">
         <h4 class="form-head">Register</h4>
-        <form action="#" method="GET">
+        <form method="post" id="signupform">
           <div class="">
-            <p class="text-head">Name</p>
-            <input type="text" name="name" class="input" placeholder="Enter Your Name.." />
+            <p class="text-head">First Name</p>
+            <input type="text" required="" asp-for="NoviKorisnik.ime" class="input" placeholder="Enter Your First Name.." />
+          </div>
+          <div class="">
+            <p class="text-head">Last Name</p>
+            <input type="text" required="" asp-for="NoviKorisnik.prezime" class="input" placeholder="Enter Your Last Name.." />
+          </div>
+          <div class="">
+            <p class="text-head">City</p>
+            <input type="text" required="" asp-for="NoviKorisnik.grad" class="input" placeholder="Enter Your City.." />
+          </div>
+          <div class="">
+            <p class="text-head">Address</p>
+            <input type="text" required="" asp-for="NoviKorisnik.adresa" class="input" placeholder="Enter Your Address.." />
+          </div>
+          <div class="">
+            <p class="text-head">Phone Number</p>
+            <input type="text" required="" asp-for="NoviKorisnik.brtelefona" class="input" placeholder="Enter Your Phone Number.." />
           </div>
           <div class="">
             <p class="text-head">Email</p>
-            <input type="email" name="email" class="input" placeholder="Enter Your Email.." />
+            <input type="email" id="email" asp-for="NoviKorisnik.email" class="input" style="margin-bottom: 0px" placeholder="Enter Your Email.." />
+            <label class="error error-hidden" style="visibility: hidden;">Please enter a valid email address.</label>
+            <label class="error" style="margin-bottom: 0px">@Model.ErrorMessage</label>
           </div>
           <div class="">
-            <p class="text-head">Password</p>
-            <input type="password" name="password" class="input" placeholder="Choose Password.." />
+            <p class="text-head" style="margin-top: 0px">Password</p>
+            <input type="password" id="password" asp-for="NoviKorisnik.sifra" class="input" style="margin-bottom: 0px" placeholder="Choose Password.." />
+            <label class="error" style="visibility: hidden;">This field is required.</label>
           </div>
           <div class="">
             <p class="text-head">Repeat Password</p>
-            <input type="password" name="password" class="input" placeholder="Repeat Password.." />
+            <input type="password" id="confirm_password" class="input" style="margin-bottom: 0px" placeholder="Repeat Password.." />
+            <label class="error" style="visibility: hidden;">This field is required.</label>
           </div>
-          <label class="remember">
-            <input type="checkbox">
-            <span class="checkmark"></span>Remember me
-          </label>
           <div class="d-grid align-login-register">
-            <button type="submit" class="btn btn-theme4">Register</button>
-            <a href="login.html" class="signuplink">Login</a>
+            <button type="submit" class="btn btn-theme4" asp-page-handler="Register">Register</button>
+            <a asp-page="/Login" class="signuplink">Login</a>
           </div>
         </form>
       </div>
@@ -49,3 +65,96 @@
 
   </div>
 </section>
+
+<script src="js/validateEmail.js"></script>
+<script>
+function emailError()
+{
+	let email=document.querySelector("#email");
+  email.parentElement.querySelectorAll(".error")[1].style.visibility="hidden";
+	if(validateEmail(email.value))
+	{
+		email.parentElement.querySelector(".error").style.visibility="hidden";
+		return false;
+	}
+	else
+	{
+							
+		email.parentElement.querySelector(".error").style.visibility="visible";
+		return true;
+	}
+}
+
+function passwordError(passID)
+{
+	let pass=document.querySelector("#password");
+	let cpass=document.querySelector("#confirm_password");
+	if(document.querySelector("#"+passID).value==""||document.querySelector("#"+passID).value.length<5)
+	{	
+		document.querySelector("#"+passID).parentElement.querySelector(".error").innerHTML="Password must be at least 5 characters long";	
+		document.querySelector("#"+passID).parentElement.querySelector(".error").style.visibility="visible";
+		return true;
+	}
+	else 
+	if(pass.value!=cpass.value)
+	{
+		document.querySelector("#"+passID).parentElement.querySelector(".error").innerHTML="Passwords do not match";	
+		document.querySelector("#"+passID).parentElement.querySelector(".error").style.visibility="visible";
+		return true;
+	}
+	else
+	{
+		pass.parentElement.querySelector(".error").innerHTML="Password must be at least 5 characters long";	
+		pass.parentElement.querySelector(".error").style.visibility="hidden";
+		cpass.parentElement.querySelector(".error").innerHTML="Password must be at least 5 characters long";	
+		cpass.parentElement.querySelector(".error").style.visibility="hidden";
+		return false;
+    }
+}
+
+element=document.querySelector("#email");
+element.onfocus=function()
+{	
+	this.onblur=()=>{ emailError();}
+}
+element.oninput=function(e)
+{
+	emailError();
+}
+
+element=document.querySelector("#password");
+element.onfocus=function()
+{	
+	this.onblur=()=>{ passwordError("password");}
+}
+element.oninput=function(e)
+{
+	passwordError("password");
+}  
+element=document.querySelector("#confirm_password");
+element.onfocus=function()
+{	
+	this.onblur=()=>{ passwordError("confirm_password");}
+}
+element.oninput=function(e)
+{
+	passwordError("confirm_password");
+}
+
+document.querySelector("#signupform").onsubmit=()=>
+{
+    let error=false;
+    if(emailError())
+		error=true;
+    if(passwordError("password"))
+		error=true;
+	if(passwordError("confirm_password"))
+		error=true;
+
+    if(error)
+	{
+		return false;
+	}
+	return true;
+}
+</script>

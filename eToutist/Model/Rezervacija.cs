@@ -8,13 +8,16 @@ namespace eTourist.Model
 {
     public class Rezervacija
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
+        /*[BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]*/
+        public ObjectId Id { get; set; }
         public DateTime datumKreiranja { get; set; }
-        public string status { get; set; }
-        [JsonIgnore]
+        public string status { get; set; } = "Na cekanju";
         public MongoDBRef Aranzman { get; set; }
-        
+        public MongoDBRef Hotel {get; set;}
+        public string Ime {get; set;}
+        public string Prezime {get; set;}
+        public string BrojPasosa {get; set;}
+        public string BrojTelefona {get; set;}
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ognjen\\Desktop\\NBP\\NBP.csproj": {}
+    "C:\\Users\\Ognjen\\Desktop\\eToutist\\NBP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ognjen\\Desktop\\NBP\\NBP.csproj": {
+    "C:\\Users\\Ognjen\\Desktop\\eToutist\\NBP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ognjen\\Desktop\\NBP\\NBP.csproj",
+        "projectUniqueName": "C:\\Users\\Ognjen\\Desktop\\eToutist\\NBP.csproj",
         "projectName": "NBP",
-        "projectPath": "C:\\Users\\Ognjen\\Desktop\\NBP\\NBP.csproj",
+        "projectPath": "C:\\Users\\Ognjen\\Desktop\\eToutist\\NBP.csproj",
         "packagesPath": "C:\\Users\\Ognjen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ognjen\\Desktop\\NBP\\obj\\",
+        "outputPath": "C:\\Users\\Ognjen\\Desktop\\eToutist\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ognjen\\AppData\\Roaming\\NuGet\\NuGet.Config",

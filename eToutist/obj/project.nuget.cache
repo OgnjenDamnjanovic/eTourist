@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9Nb/a8+A46f0dTObPZ1cdy0DKmYErdolm7c+xpFcaZmA2VYgvY4YqES/JsytTOqRdUIuM3VrKy6ec36E+E4p8A==",
+  "dgSpecHash": "DKh+BmWtO7E4Zp4Jbo/6JEYqTxEsiqnprFAcgY4PqtH+yk9mvbh/2/h5L6ybJnexNE0nKaZJ2AvNJYgqZN4+7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ognjen\\Desktop\\eToutist\\NBP.csproj",
+  "projectFilePath": "C:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\NBP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ognjen\\.nuget\\packages\\dnsclient\\1.3.1\\dnsclient.1.3.1.nupkg.sha512",
     "C:\\Users\\Ognjen\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",

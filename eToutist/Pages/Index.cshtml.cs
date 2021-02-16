@@ -7,19 +7,21 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace NBP.Pages
 {
      public class IndexModel : PageModel
     {
-        public List<Hotel> popularneLokacije { get; set; }=new List<Hotel>();
+        
         public List<Hotel> topRated { get; set; }
         public string Message {get; set;}
         
 
         private readonly IMongoCollection<Hotel> _dbHotels;
          private readonly IMongoCollection<Korisnik> _dbKorisnici;
+         private readonly IMongoCollection<Drzava> _dbDrzave;
       
 
         public IndexModel(IDatabaseSettings settings)
@@ -28,12 +30,14 @@ namespace NBP.Pages
             var database = client.GetDatabase(settings.DatabaseName);
             _dbHotels = database.GetCollection<Hotel>("hoteli");
             _dbKorisnici = database.GetCollection<Korisnik>("korisnici");
+            _dbDrzave=database.GetCollection<Drzava>("drzave");
         }
 
         public void OnGet()
         {
-           topRated= _dbHotels.AsQueryable<Hotel>().OrderByDescending(Hotel=>Hotel.brojZvezdica).ToList(); 
-           //popularneLokacije=_dbHotels.AsQueryable<Hotel>().OrderByDescending(Hotel=>Hotel.Aranzmani.Count()).ToList(); 
+           topRated= _dbHotels.AsQueryable<Hotel>().OrderByDescending(Hotel=>Hotel.brojZvezdica).Take(2).ToList(); 
+             
+
 
             String email = HttpContext.Session.GetString("email");
             if(email!=null)

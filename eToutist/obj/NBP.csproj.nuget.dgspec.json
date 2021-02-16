@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ognjen\\Desktop\\eToutist\\NBP.csproj": {}
+    "C:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\NBP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ognjen\\Desktop\\eToutist\\NBP.csproj": {
+    "C:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\NBP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ognjen\\Desktop\\eToutist\\NBP.csproj",
+        "projectUniqueName": "C:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\NBP.csproj",
         "projectName": "NBP",
-        "projectPath": "C:\\Users\\Ognjen\\Desktop\\eToutist\\NBP.csproj",
+        "projectPath": "C:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\NBP.csproj",
         "packagesPath": "C:\\Users\\Ognjen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ognjen\\Desktop\\eToutist\\obj\\",
+        "outputPath": "C:\\Users\\Ognjen\\Desktop\\NBP\\eTourist\\eTourist\\eToutist\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ognjen\\AppData\\Roaming\\NuGet\\NuGet.Config",

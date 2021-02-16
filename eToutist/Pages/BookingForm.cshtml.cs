@@ -68,7 +68,7 @@ namespace MyApp.Namespace
             return RedirectToPage("/Index");
             HotelId=hotel;
             aranzmanId=id;
-             List<Aranzman> zav=_dbAranzmani.Find(ar=>true).ToList();
+            // List<Aranzman> zav=_dbAranzmani.Find(ar=>true).ToList();
            List<Aranzman> zabranjeniAranzmani=_dbAranzmani.Find(ar=>ar.hotel.Id==Hotel.Id&&
                                 (
                                 (ar.pocetak.CompareTo(aranzman.pocetak)>=0&&ar.pocetak.CompareTo(aranzman.kraj)<=0)||

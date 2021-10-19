@@ -1,7 +1,0 @@
-dan 1 - upoznavanje sa nestJS-om
-dan 2 - upoznavanje sa TypeOrm objekto relacionim maperom, upoznavanje sa postgresql bazom podataka
-dan 3 - upoznavanje sa material ui tree komponentom, izrada apija za formiranje equipment modela
-dan 4,5 - pravljenje aplikacije za prikaz equipment modela, upoznavanje sa dashboard projektom
-
-dan 6 - pravljenje single value dashborda i compare two dashboarda
-
